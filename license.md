@@ -1,0 +1,3 @@
+- There is no warranties
+- Use/modify everywhere
+- Point to this github/gist (attribution)
