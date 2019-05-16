@@ -12,7 +12,7 @@
 ### Colors
 
 In the tab `Colors` you can add or change colors.   
-At the moment, in order to see the changes you have to (re)calculate voronoi (`voronoi` tab > `calc voronoi`).
+To see the changes click `set all colors` button.
 
 ### Options
 
@@ -51,6 +51,8 @@ Features:
 - exporting (image, sites, points)
 - setting size (require more testing)
 
+### **0.0.2 alpha**:
+- You can now change all colors of the voronoi by pressing `set all colors` button in the `Colors` tab.
 
 ## License
 

@@ -1,6 +1,6 @@
 Red [
     author: "Nędza Darek"
-    version: 0.0.1
+    version: 0.0.2
     subversion: `alpha
     license: %license.md
 ]
@@ -227,6 +227,20 @@ main-layout: [
           color-list/selected
           update-color-tabs-and-preview
 
+        ]
+        return
+        
+        wide-button "set all colors" [
+            img: copy computed-voronoi/image
+            repeat _x img/size/x [
+                repeat _y img/size/y [
+                    _c: colors/(computed-voronoi/voronoi/:_x/:_y)
+                    if _c [ 
+                        img/(to-pair reduce [_x _y]): _c
+                    ]
+                ]
+            ]
+            voronoi-image/image: computed-voronoi/image: img
         ]
         return
       ]
